@@ -63,6 +63,9 @@ export default function Intro(props) {
           </div>
         </div>
       </div>
+      <div className="scroll-arrow" onClick={() => props.scrollToAbout()}>
+        <i class="fas fa-chevron-circle-down"></i>
+      </div>
     </div>
   );
 }

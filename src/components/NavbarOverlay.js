@@ -37,6 +37,15 @@ export default function NavbarOverlay(props) {
       >
         PROJECTS
       </div>
+      <div
+        className="navbar-overlay-link"
+        onClick={() => {
+          props.hide();
+          setTimeout(() => props.scrollToContact(), 250);
+        }}
+      >
+        CONTACT
+      </div>
     </div>
   );
 }

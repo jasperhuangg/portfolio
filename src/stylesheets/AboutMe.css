@@ -24,6 +24,34 @@
   transition: 0.2s ease;
 }
 
+.resume {
+  margin-top: 35px;
+  font-family: SF-Pro-Bold;
+  text-align: center;
+  letter-spacing: 2px;
+  opacity: 0.4;
+  transition: 0.2s ease;
+  border: solid 2px rgba(0, 0, 0, 0);
+  border-radius: 7px;
+  padding: 5px;
+  padding-left: 10px;
+
+  padding-right: 10px;
+}
+
+.resume:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+  opacity: 1;
+  transition: 0.2s ease;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.resume:active {
+  transform: scale(0.9, 0.9);
+  transition: 0.1s ease;
+}
+
 @keyframes GrowInAnimation {
   0% {
     transform: scale(0.6, 0.6);

@@ -74,6 +74,33 @@
   transition: 0.1s ease;
 }
 
+.scroll-arrow {
+  animation: FadeIn 5s ease forwards;
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+}
+
+.scroll-arrow i {
+  color: white;
+  opacity: 0.4;
+  font-size: 30px;
+
+  transition: 0.2s ease;
+}
+
+.scroll-arrow i:hover {
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+  opacity: 1;
+  transition: 0.2s ease;
+}
+
+.scroll-arrow i:active {
+  transform: scale(0.9, 0.9);
+  transition: 0.1s ease;
+}
+
 @-webkit-keyframes GradientAnimation {
   0% {
     background-position: 0% 50%;

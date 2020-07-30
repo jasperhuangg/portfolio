@@ -43,6 +43,9 @@ export default function Navbar(props) {
           <div className="navbar-link" onClick={() => props.scrollToProjects()}>
             PROJECTS
           </div>
+          <div className="navbar-link" onClick={() => props.scrollToContact()}>
+            CONTACT
+          </div>
         </div>
       ) : (
         <div

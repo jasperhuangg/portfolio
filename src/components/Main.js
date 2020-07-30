@@ -74,7 +74,7 @@ const PROJECTS = [
     ],
     [
       "Abstracting the grid and implementing the algorithms was relatively straightforward, but figuring out how to assign CSS animations based on each stage of the algorithm's execution required some careful thought and planning.",
-      "Figuring out how minimize lag from CSS animations required some tinkering.",
+      "Figuring out how to minimize lag from CSS animations required some tinkering.",
     ],
     [
       {
@@ -198,6 +198,15 @@ export default function Main(props) {
     );
   }
 
+  function scrollToContact() {
+    $("html, body").animate(
+      {
+        scrollTop: $("#contact-section-start").offset().top - 60,
+      },
+      500
+    );
+  }
+
   function scrollToTop() {
     $("html, body").animate(
       {
@@ -230,6 +239,7 @@ export default function Main(props) {
           scrollPos={scrollPos}
           scrollToAbout={() => scrollToAbout()}
           scrollToProjects={() => scrollToProjects()}
+          scrollToContact={() => scrollToContact()}
           scrollToTop={() => scrollToTop()}
           Resume={Resume}
           showNavbarOverlay={() => {
@@ -240,15 +250,21 @@ export default function Main(props) {
         <NavbarOverlay
           scrollToAbout={() => scrollToAbout()}
           scrollToProjects={() => scrollToProjects()}
+          scrollToContact={() => scrollToContact()}
           Resume={Resume}
           displaying={navbarOverlayDisplaying}
           hide={() => setNavbarOverlayDisplaying(false)}
         />
 
-        <Intro dimensions={dimensions} />
+        <Intro dimensions={dimensions} scrollToAbout={() => scrollToAbout()} />
         <h1 id="about-section-start" className="section-header"></h1>
 
-        <AboutMe dimensions={dimensions} scrollPos={scrollPos} />
+        <AboutMe
+          dimensions={dimensions}
+          scrollPos={scrollPos}
+          scrollToContact={() => scrollToContact()}
+          Resume={Resume}
+        />
         {detailsShowing ? (
           <OverlayShadow
             hide={() => {
@@ -306,7 +322,34 @@ export default function Main(props) {
             })}
           </div>
         </div>
-        <div className="footer shadow gradient no-select">
+        <h1
+          style={{ marginTop: "50px" }}
+          id="contact-section-start"
+          className={
+            "gradient-text section-header" +
+            (getIsDisplaying("projects-section-start") ? " grow-in-fast" : "")
+          }
+        >
+          Contact
+        </h1>
+        <div className="contact-section">
+          <div>Like what you see? Hit me up --</div>
+          <div
+            style={{
+              marginLeft: "0.5em",
+              marginRight: "0.5em",
+            }}
+            className="gradient-text email"
+            href="mailto:jasperhu@usc.edu"
+          >
+            {" "}
+            jasperhu@usc.edu
+          </div>
+        </div>
+        <div
+          className="footer shadow gradient no-select"
+          onClick={() => scrollToTop()}
+        >
           JASPER HUANG &copy; 2020
         </div>
       </div>

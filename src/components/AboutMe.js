@@ -144,8 +144,16 @@ export default function AboutMe(props) {
       >
         You can catch me in my free-time making music, working on side projects,
         reading articles about my favorite frameworks, and hitting the gym.
-        Please don't hesitate to contact me for new opportunities or if you just
-        want to talk tech!
+        Please don't hesitate to{" "}
+        <span className="email" onClick={() => props.scrollToContact()}>
+          contact
+        </span>{" "}
+        me for new opportunities or if you just want to talk tech!
+        <div className="d-flex justify-content-center">
+          <span className="resume" onClick={() => window.open(props.Resume)}>
+            RESUME
+          </span>
+        </div>
       </div>
     </div>
   );
