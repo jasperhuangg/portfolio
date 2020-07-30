@@ -306,6 +306,9 @@ export default function Main(props) {
             })}
           </div>
         </div>
+        <div className="footer shadow gradient no-select">
+          JASPER HUANG &copy; 2020
+        </div>
       </div>
     </>
   );

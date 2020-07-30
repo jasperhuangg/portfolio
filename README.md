@@ -1,3 +1,3 @@
-# Personal Site
+# Personal Portfolio
 
-#### Developed with React.js
+#### Developed with React.js.
