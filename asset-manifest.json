@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.a6419e50.chunk.css",
+    "main.js": "/portfolio/static/js/main.32f687f6.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.32f687f6.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.2d21c647.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.2d21c647.js.map",
+    "static/js/2.21f18ea8.chunk.js": "/portfolio/static/js/2.21f18ea8.chunk.js",
+    "static/js/2.21f18ea8.chunk.js.map": "/portfolio/static/js/2.21f18ea8.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.0032ef286c31373ca7049926a9ab222e.js": "/portfolio/precache-manifest.0032ef286c31373ca7049926a9ab222e.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.a6419e50.chunk.css.map": "/portfolio/static/css/main.a6419e50.chunk.css.map",
+    "static/js/2.21f18ea8.chunk.js.LICENSE.txt": "/portfolio/static/js/2.21f18ea8.chunk.js.LICENSE.txt",
+    "static/media/Jasper_Huang_Resume.pdf": "/portfolio/static/media/Jasper_Huang_Resume.48109b3a.pdf",
+    "static/media/preview.gif": "/portfolio/static/media/preview.e06ca918.gif",
+    "static/media/preview.png": "/portfolio/static/media/preview.8f6482b0.png",
+    "static/media/Fonts.css": "/portfolio/static/media/sf-pro-text-semibold.77690a3c.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2d21c647.js",
+    "static/js/2.21f18ea8.chunk.js",
+    "static/css/main.a6419e50.chunk.css",
+    "static/js/main.32f687f6.chunk.js"
+  ]
+}
