@@ -1,0 +1,174 @@
+.project-details-container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 0;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.project-details-container-displaying {
+  pointer-events: all;
+}
+
+.project-details {
+  background-color: rgb(40, 40, 40);
+  border-radius: 15px;
+  padding: 36px;
+  position: relative;
+  min-width: 375px;
+  min-height: 90vh;
+  /* max-height: 90vh; */
+  transform: scale(0.4, 0.4);
+  opacity: 0;
+  transition: 0.4s ease;
+  overflow: auto;
+  overflow-x: hidden;
+  cursor: auto;
+}
+
+.project-details-displaying {
+  transform: scale(1, 1);
+  opacity: 1;
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project-details-header {
+  font-family: SF-Pro-Bold;
+}
+
+.project-xl-details-header {
+  text-align: center;
+  font-size: 30px;
+}
+
+.project-sm-details-header {
+  text-align: center;
+  font-size: 25px;
+}
+
+.project-xs-details-header {
+  text-align: center;
+  font-size: 22px;
+}
+
+.project-details-collapse {
+  position: fixed;
+  top: 15px;
+  right: 25px;
+  font-size: 20px;
+  opacity: 0.2;
+  transition: 0.2s ease;
+}
+
+.project-details-collapse:hover {
+  opacity: 1;
+  transition: 0.2s ease;
+  transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  cursor: pointer;
+}
+
+.project-details-collapse:active {
+  opacity: 1;
+  transform: scale(0.9, 0.9);
+  -webkit-transform: scale(0.9, 0.9);
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+.project-details-section-header {
+  font-family: SF-Pro-Heavy;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.project-details-bullets {
+  font-family: SF-Pro-Regular;
+  line-height: 1.6;
+}
+
+.project-details-bullets li {
+  list-style-type: none;
+  padding-left: 1em;
+  text-indent: -1em;
+  margin-left: 0;
+}
+
+.project-details-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.project-details-links i {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.project-details-link-btn {
+  opacity: 0.2;
+  transition: 0.2s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 7px;
+  font-family: SF-Pro-Light;
+  font-size: 14px;
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.project-details-links .fa-github-square {
+  font-size: 25px !important;
+}
+
+.project-details-link-btn:hover {
+  opacity: 1;
+  transition: 0.2s ease;
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+}
+
+.project-details::-webkit-scrollbar {
+  width: 6px;
+}
+.project-details::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+.project-details::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+
+.project-details::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transition: 0.2s ease;
+}
+
+.project-details::-moz-scrollbar {
+  width: 6px;
+}
+.project-details::-moz-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+.project-details::-moz-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+
+.project-details::-moz-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transition: 0.2s ease;
+}

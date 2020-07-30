@@ -1,0 +1,45 @@
+@font-face {
+  font-family: SF-Pro-Regular;
+  src: url(../assets/SFPro/sf-pro-text-regular.ttf);
+}
+
+@font-face {
+  font-family: SF-Pro-Bold;
+  src: url(../assets/SFPro/sf-pro-text-bold.ttf);
+}
+
+@font-face {
+  font-family: SF-Pro-Heavy;
+  src: url(../assets/SFPro/sf-pro-text-heavy.ttf);
+}
+
+@font-face {
+  font-family: SF-Pro-Medium;
+  src: url(../assets/SFPro/sf-pro-text-medium.ttf);
+}
+
+@font-face {
+  font-family: SF-Pro-Light;
+  src: url(../assets/SFPro/sf-pro-text-light.ttf);
+}
+
+@font-face {
+  font-family: SF-Pro-Semi-Bold;
+  src: url(../assets/SFPro/sf-pro-text-semibold.ttf);
+}
+
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                        supported by Chrome, Edge, Opera and Firefox */
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(45deg, #3ad190, #3ab5d1, #a73bce);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
