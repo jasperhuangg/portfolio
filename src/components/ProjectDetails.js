@@ -73,9 +73,37 @@ export default function ProjectDetails(props) {
                 style={{
                   paddingRight: "1em",
                 }}
-              ></i>
+              />
               {props.project.skills}
             </li>
+          </ul>
+        </div>
+        <h3 className="project-details-section-header">
+          {props.project.whyBullets && props.project.whyBullets.length ? "Why?" : ""}
+        </h3>
+        <div className="project-details-bullets">
+          <ul>
+            {props.project.aboutBullets === undefined
+              ? ""
+              : props.project.whyBullets.map((whyBullet) => {
+                return (
+                  <li
+                    key={whyBullet}
+                    style={{
+                      paddingTop: "5px",
+                      paddingBottom: "5px",
+                    }}
+                  >
+                    <i
+                      className="fas fa-angle-right"
+                      style={{
+                        paddingRight: "1em",
+                      }}
+                    />
+                    {whyBullet}
+                  </li>
+                );
+              })}
           </ul>
         </div>
         <h3 className="project-details-section-header">About</h3>
@@ -97,7 +125,7 @@ export default function ProjectDetails(props) {
                         style={{
                           paddingRight: "1em",
                         }}
-                      ></i>
+                      />
                       {aboutBullet}
                     </li>
                   );
@@ -136,9 +164,9 @@ export default function ProjectDetails(props) {
           </ul>
         </div>
 
-        <div className="project-details-collapse" onClick={() => props.hide()}>
-          <i className="fas fa-times-circle"></i>
-        </div>
+        {/*<div className="project-details-collapse" onClick={() => props.hide()}>*/}
+        {/*  <i className="fas fa-times-circle"></i>*/}
+        {/*</div>*/}
       </div>
     </div>
   );

@@ -25,7 +25,7 @@
 }
 
 .resume {
-  margin-top: 35px;
+  margin-top: 50px;
   font-family: SF-Pro-Bold;
   text-align: center;
   letter-spacing: 2px;
@@ -63,3 +63,5 @@
     visibility: visible;
   }
 }
+
+

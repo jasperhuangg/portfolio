@@ -4,6 +4,7 @@ export default class Project {
     brief,
     preview,
     skills,
+    whyBullets,
     aboutBullets,
     solutionsBullets,
     links
@@ -12,6 +13,7 @@ export default class Project {
     this.brief = brief;
     this.preview = preview;
     this.skills = skills;
+    this.whyBullets = whyBullets;
     this.aboutBullets = aboutBullets;
     this.solutionsBullets = solutionsBullets;
     this.links = links;

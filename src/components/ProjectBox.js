@@ -1,5 +1,5 @@
 /**
- * TODO: change to use jquery for grow in instead of React observer
+ * TODO: change to use jquery for grow in instead of observer
  */
 
 import React from "react";

@@ -28,6 +28,7 @@ const PROJECTS = [
     "A platform that matches Spotify songs to music videos.",
     SpotifyMTVPreview,
     "Typescript, React, Express.js, MongoDB, Node.js, Bootstrap, HTML/CSS",
+    ["One of my friends really enjoys watching music videos, and he expressed how he wanted all of the music videos for his Spotify music in an easy place. I figured this would be a great opportunity to learn Typescript with React, so I decided to implement it for him. I also exercised my design skills by styling the website to look just like the Spotify desktop application."],
     [
       "Takes information from a user's Spotify profile (e.g. top tracks, top artists, playlists) and creates a mapping of each song to a music video from the Youtube Data API.",
       "CSS styling serves to mirror that of Spotify's desktop application to create a seamless user experience.",
@@ -44,6 +45,7 @@ const PROJECTS = [
     "A smart task manager with numerous user-thinking features.",
     DoozyPreview,
     "Javascript, React, Express.js, MongoDB, Node.js, Bootstrap, HTML/CSS",
+    ["This was my first React project. I didn't want it to be a simple todolist app, so I modeled it after one of my favorite task manager applications. I wanted to learn via trial by fire, so I chose to implement a bunch of features to really solidify my understanding of React."],
     [
       "A fully-featured task manager app inspired by TickTick.",
       "Developed algorithm that translates natural language into due dates and priorities to streamline the process of adding todo items.",
@@ -66,12 +68,14 @@ const PROJECTS = [
     "An educational tool to help with learning pathfinding algorithms.",
     PathfindingVisualizerPreview,
     "Javascript, HTML/CSS, jQuery, Bootstrap",
+    ["I remember I had tons of trouble understanding and appreciating Pathfinding Algorithms when I was learning them in my intro CS classes. None of the visualizers were that enjoyable to use. This aims to solve that problem by providing visualizations that are visually appealing and easy to understand"],
     [
       "Developed user-friendly UI providing visualizations of Greedy BFS, Dijkstra’s Algorithm, A* Search, and Bidirectional A* using Javascript and CSS animations.",
       "Click and drag mechanic allows placing walls and weights to alter how the algorithms pick the shortest path between start and finish nodes.",
       "Ability to choose different simulation speeds allows viewing of each algorithm’s execution in more/less detail.",
       "Pick between different color themes of your choosing for algorithm execution.",
     ],
+
     [
       "Abstracting the grid and implementing the algorithms was relatively straightforward, but figuring out how to assign CSS animations based on each stage of the algorithm's execution required some careful thought and planning.",
       "Figuring out how to minimize lag from CSS animations required some tinkering.",
@@ -92,6 +96,7 @@ const PROJECTS = [
     "A multiplayer web game for telling stories and staying connected.",
     ComicReliefPreview,
     "Javascript, Express.js, Node.js, Socket.io, jQuery, HTML/CSS, Bootstrap, Heroku",
+    ["Having already learned how to code up a basic Express server that supported GET/POST/PUT/etc. operations, I wanted to learn how to code up a more complex server. I also just finished a board-game design class at school, and I had been playing online 'io' style games during quarantine with my friends. I decided the board game I designed as the final project for the game design class would be ideal to turn into a multiplayer web game."],
     [
       "The online version of a group project for a board game design class at USC.",
       "Single-paged web app developed with Javascript, the WebSocket API, jQuery, Node.js, Express.js, and HTML/ CSS.",
@@ -118,6 +123,7 @@ const PROJECTS = [
     "A tool that ranks and filters out songs in Spotify playlists.",
     SpotifyPlaylistMinifierPreview,
     "Javascript, Express.js, Node.js, jQuery, HTML/CSS, Bootstrap",
+    [],
     [
       "Developed ranking algorithm for playlist songs integrating listening metrics from the Spotify Web API.",
       "Implemented Express Node.js server that authenticates user login requests via Spotify OAuth and uploads the user’s listening metrics to a MongoDB database.",
@@ -129,10 +135,6 @@ const PROJECTS = [
     ],
     [
       {
-        url: "https://github.com/jasperhuangg/comic-relief",
-        type: "Github",
-      },
-      {
         url: "https://comic-relief-game.herokuapp.com/",
         type: "Demo",
       },
@@ -143,6 +145,7 @@ const PROJECTS = [
     "A dynamic memory allocator supporting malloc, realloc, and free.",
     CDynamicMemoryAllocatorPreview,
     "C, Heap Management",
+    [],
     [
       "A class project for a C dynamic memory allocator that implements allocating, reallocating, and freeing memory on the heap.",
       "Optimized for speed and space usage, comparable in both categories to the C library functions.",
@@ -156,7 +159,7 @@ const PROJECTS = [
   ),
 ];
 
-export default function Main(props) {
+export default function Main() {
   const [currentProject, setCurrentProject] = useState({});
   const [detailsShowing, setDetailsShowing] = useState(false);
   const [dimensions, setDimensions] = useState({
@@ -330,14 +333,15 @@ export default function Main(props) {
             (getIsDisplaying("projects-section-start") ? " grow-in-fast" : "")
           }
         >
-          Contact
+          {/* Contact */}
         </h1>
         <div className="contact-section">
-          <div>Like what you see? Hit me up --</div>
+          <div>Like what you see? Let's talk!</div>
           <div
             style={{
               marginLeft: "0.5em",
               marginRight: "0.5em",
+              marginTop: "1em",
             }}
             className="gradient-text email"
             href="mailto:jasperhu@usc.edu"
