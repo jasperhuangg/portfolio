@@ -70,8 +70,8 @@ export default function AboutMe(props) {
                 style={{
                   paddingRight: "1em",
                 }}
-              ></i>
-              Javascript, Typescript, Java, Python, PHP, C++, SQL, HTML, CSS
+              />
+              Javascript, Typescript, Java, Python, PHP, SQL, HTML, CSS
             </li>
             <li
               style={{
@@ -84,8 +84,8 @@ export default function AboutMe(props) {
                 style={{
                   paddingRight: "1em",
                 }}
-              ></i>
-              React.js, Node.js, Express.js, jQuery, Bootstrap
+              />
+              React.js, Node.js, Express.js, ReactiveX, jQuery, Bootstrap
             </li>
             <li
               style={{
@@ -98,8 +98,8 @@ export default function AboutMe(props) {
                 style={{
                   paddingRight: "1em",
                 }}
-              ></i>
-              MongoDB, MySQL
+              />
+              MongoDB, MySQL, Firebase
             </li>
             <li
               style={{
@@ -112,7 +112,7 @@ export default function AboutMe(props) {
                 style={{
                   paddingRight: "1em",
                 }}
-              ></i>
+              />
               Enzyme, Jest, Cucumber, Selenium, jUnit
             </li>
             <li
@@ -126,9 +126,9 @@ export default function AboutMe(props) {
                 style={{
                   paddingRight: "1em",
                 }}
-              ></i>
+              />
               Agile Methodologies, Web Service Architectures (Async,
-              Client/Server, MVC, RESTful APIs), Git Versioning
+              Client/Server, MVC, RESTful APIs, Observer), Git Versioning
               (Github/Bitbucket)
             </li>
           </ul>
@@ -163,11 +163,7 @@ export default function AboutMe(props) {
     const elementTop = $("#" + id).offset().top;
     const elementHeight = $("#" + id).height();
 
-    if (
-      props.scrollPos >=
-      elementTop + elementHeight * 0.25 - props.dimensions.height
-    )
-      return true;
-    else return false;
+    return props.scrollPos >=
+      elementTop + elementHeight * 0.25 - props.dimensions.height;
   }
 }

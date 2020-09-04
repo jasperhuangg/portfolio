@@ -1,9 +1,3 @@
-/**
- * // TODO:
- * - Add scroll to top of div when the details overlay is closed.
- * - Fix cutoff on mobile
- */
-
 import React from "react";
 
 import "../stylesheets/ProjectDetails.css";
@@ -31,7 +25,6 @@ export default function ProjectDetails(props) {
           width: 0.7 * props.dimensions.width,
           height: 0.7 * props.dimensions.height,
         }}
-        onClick={(e) => e.stopPropagation()}
       >
         <div
           className={
@@ -163,10 +156,6 @@ export default function ProjectDetails(props) {
                 })}
           </ul>
         </div>
-
-        {/*<div className="project-details-collapse" onClick={() => props.hide()}>*/}
-        {/*  <i className="fas fa-times-circle"></i>*/}
-        {/*</div>*/}
       </div>
     </div>
   );
