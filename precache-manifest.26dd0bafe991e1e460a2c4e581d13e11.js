@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "77b96a8ddc9ed6ff59415620eebda617",
+    "revision": "3bab45905a77f605ce0b02c0df1a2533",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "216925577cdee081c93d",
+    "revision": "0aa831ee777dc146c35b",
     "url": "/portfolio/static/css/main.48d7d577.chunk.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.21f18ea8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "216925577cdee081c93d",
-    "url": "/portfolio/static/js/main.35fa06dd.chunk.js"
+    "revision": "0aa831ee777dc146c35b",
+    "url": "/portfolio/static/js/main.de706d3a.chunk.js"
   },
   {
     "revision": "9d244302c4d41b89a93a",
     "url": "/portfolio/static/js/runtime-main.2d21c647.js"
   },
   {
-    "revision": "9c80f03cd28097cee615c6247ba850fc",
-    "url": "/portfolio/static/media/Jasper_Huang_Resume.9c80f03c.pdf"
+    "revision": "59ba3a708869e1c75adbe10edd5b4b4a",
+    "url": "/portfolio/static/media/Jasper_Huang_Resume.59ba3a70.pdf"
   },
   {
     "revision": "0ed224a5bd38a37b01d089f01b178804",
