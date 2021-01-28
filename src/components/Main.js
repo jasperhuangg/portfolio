@@ -9,7 +9,7 @@ import Intro from "./Intro";
 import AboutMe from "./AboutMe";
 import Navbar from "./Navbar";
 import NavbarOverlay from "./NavbarOverlay";
-import {PROJECTS} from "../util/Projects"
+import { PROJECTS } from "../util/Projects";
 
 import "../stylesheets/Main.css";
 
@@ -192,7 +192,7 @@ export default function Main() {
           {/* Contact */}
         </h1>
         <div className="contact-section">
-          <div>Like what you see? Let's talk!</div>
+          <div style={{fontStyle: "italic", paddingLeft: 30, paddingRight: 30}}>Wanna build something cool? Let's talk!</div>
           <div
             style={{
               marginLeft: "0.5em",
@@ -210,7 +210,7 @@ export default function Main() {
           className="footer shadow gradient no-select"
           onClick={() => scrollToTop()}
         >
-          JASPER HUANG &copy; 2020
+          <i class="fab fa-react" /> JASPER HUANG &copy; 2020
         </div>
       </div>
     </>

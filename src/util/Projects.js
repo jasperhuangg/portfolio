@@ -80,7 +80,7 @@ export const PROJECTS = [
     "A multiplayer web game for telling stories and staying connected.",
     ComicReliefPreview,
     "Javascript, Express.js, Node.js, Socket.io, jQuery, HTML/CSS, Bootstrap, Heroku",
-    ["Having already learned how to code up a basic Express server that supported GET/POST/PUT/etc. operations, I wanted to learn how to code up a more complex server. I also just finished a board-game design class at school, and I had been playing online 'io' style games during quarantine with my friends. I decided the board game I designed as the final project for the game design class would be ideal to turn into a multiplayer web game."],
+    ["Having already learned how to code up a basic Express server that supported GET/POST/PUT/etc. operations, I wanted to learn how to code up a more complex server. I also just finished a game design class at school, and I had been playing online 'io' style games during quarantine with my friends. I decided the board game I designed as the final project for the game design class would be ideal to turn into a multiplayer web game."],
     [
       "The online version of a group project for a board game design class at USC.",
       "Single-paged web app developed with Javascript, the WebSocket API, jQuery, Node.js, Express.js, and HTML/ CSS.",

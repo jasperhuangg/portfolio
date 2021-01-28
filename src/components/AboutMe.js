@@ -16,7 +16,7 @@ export default function AboutMe(props) {
         style={{ marginBottom: "50px" }}
       >
         Full stack engineer with an eye for UI design and a passion for creating
-        great products.
+        great tech.
       </div>
       <div
         id="about-me-p1"
@@ -26,9 +26,8 @@ export default function AboutMe(props) {
         }
         style={{ marginBottom: "25px" }}
       >
-        I'm a self-starter, creative, and problem-solver with a passion for
-        learning new technologies and creating seamless user experiences. I
-        enjoy working along the entire stack to ensure system components work
+        Self-starter, creative, and problem-solver with a passion for
+        learning new technologies and creating seamless user experiences. Enjoys the process of ensuring system components work
         well together to bring the best experience for users.
       </div>
       <div
@@ -71,7 +70,7 @@ export default function AboutMe(props) {
                   paddingRight: "1em",
                 }}
               />
-              Javascript, Typescript, Java, Python, PHP, SQL, HTML, CSS
+              Typescript, Javascript, GraphQL, Java, Python, PHP, SQL, HTML, CSS
             </li>
             <li
               style={{
@@ -85,7 +84,8 @@ export default function AboutMe(props) {
                   paddingRight: "1em",
                 }}
               />
-              React.js, Node.js, Express.js, ReactiveX, jQuery, Bootstrap
+              React/React Native, Redux, Node.js, Express.js, Apollo GraphQL,
+              ReactiveX, jQuery, Bootstrap
             </li>
             <li
               style={{
@@ -99,7 +99,7 @@ export default function AboutMe(props) {
                   paddingRight: "1em",
                 }}
               />
-              MongoDB, MySQL, Firebase
+              MongoDB, Firebase, MySQL, Google Cloud SQL, DynamoDB
             </li>
             <li
               style={{
@@ -128,8 +128,8 @@ export default function AboutMe(props) {
                 }}
               />
               Agile Methodologies, Web Service Architectures (Async,
-              Client/Server, MVC, RESTful APIs, Observer), Git Versioning
-              (Github/Bitbucket)
+              Client/Server, MVC, RESTful APIs, Publish/Subscribe), Git
+              Versioning (Github/Bitbucket)
             </li>
           </ul>
         </div>
@@ -142,13 +142,13 @@ export default function AboutMe(props) {
         }
         style={{ marginBottom: "100px" }}
       >
-        You can catch me in my free-time making music, working on side projects,
-        reading articles about my favorite frameworks, and hitting the gym.
-        Please don't hesitate to{" "}
+        In my free-time I like making music, working on side projects,
+        reading Medium articles, and hitting the
+        gym. Please don't hesitate to{" "}
         <span className="email" onClick={() => props.scrollToContact()}>
           contact
         </span>{" "}
-        me for new opportunities or if you just want to talk tech!
+        me for new opportunities or if you just want to have a chat!
         <div className="d-flex justify-content-center">
           <span className="resume" onClick={() => window.open(props.Resume)}>
             RESUME
@@ -163,7 +163,9 @@ export default function AboutMe(props) {
     const elementTop = $("#" + id).offset().top;
     const elementHeight = $("#" + id).height();
 
-    return props.scrollPos >=
-      elementTop + elementHeight * 0.25 - props.dimensions.height;
+    return (
+      props.scrollPos >=
+      elementTop + elementHeight * 0.25 - props.dimensions.height
+    );
   }
 }
