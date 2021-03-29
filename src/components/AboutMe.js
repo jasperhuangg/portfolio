@@ -152,15 +152,4 @@ export default function AboutMe(props) {
       </div>
     </div>
   );
-
-  function getIsDisplaying(id) {
-    if ($("#" + id).offset() === undefined) return false;
-    const elementTop = $("#" + id).offset().top;
-    const elementHeight = $("#" + id).height();
-
-    return (
-      props.scrollPos >=
-      elementTop + elementHeight * 0.25 - props.dimensions.height
-    );
-  }
 }
