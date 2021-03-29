@@ -9,14 +9,12 @@
 }
 .about-me-paragraph {
   width: 70%;
-  visibility: hidden;
 }
 
 .about-me-brief {
   font-family: SF-Pro-Heavy;
   font-size: 30px;
   text-align: center;
-  visibility: hidden;
   transition: 0.2s ease;
 }
 
