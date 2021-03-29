@@ -10,8 +10,7 @@ export default function AboutMe(props) {
       <div
         id="about-me-brief"
         className={
-          "gradient-text about-me-paragraph about-me-brief" +
-          (getIsDisplaying("about-me-brief") ? " grow-in" : "")
+          "gradient-text about-me-paragraph about-me-brief"
         }
         style={{ marginBottom: "50px" }}
       >
@@ -21,8 +20,7 @@ export default function AboutMe(props) {
       <div
         id="about-me-p1"
         className={
-          "about-me-paragraph" +
-          (getIsDisplaying("about-me-p1") ? " grow-in" : "")
+          "about-me-paragraph"
         }
         style={{ marginBottom: "25px" }}
       >
@@ -33,8 +31,7 @@ export default function AboutMe(props) {
       <div
         id="about-me-p2"
         className={
-          "about-me-paragraph" +
-          (getIsDisplaying("about-me-p2") ? " grow-in" : "")
+          "about-me-paragraph"
         }
         style={{ marginBottom: "25px" }}
       >
@@ -46,8 +43,7 @@ export default function AboutMe(props) {
       <div
         id="about-me-skills"
         className={
-          "about-me-paragraph" +
-          (getIsDisplaying("about-me-skills") ? " grow-in" : "")
+          "about-me-paragraph"
         }
         style={{ marginBottom: "25px" }}
       >
@@ -137,8 +133,7 @@ export default function AboutMe(props) {
       <div
         id="about-me-p3"
         className={
-          "about-me-paragraph" +
-          (getIsDisplaying("about-me-p3") ? " grow-in" : "")
+          "about-me-paragraph"
         }
         style={{ marginBottom: "100px" }}
       >
